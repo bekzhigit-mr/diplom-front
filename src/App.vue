@@ -90,7 +90,7 @@ export default {
     },
     methods: {
       getData() {
-          axios.get('http://localhost:3000/calculated_data').then((res) => {
+          axios.get('http://185.116.194.87/calculated_data').then((res) => {
               console.log("res", res)
               this.data = res.data[0].data;
               let arrRoK = []
@@ -102,7 +102,7 @@ export default {
       },
       calculateParams() {
           console.log("params", this.params)
-          axios.post('http://localhost:3000/calculate', {
+          axios.post('http://185.116.194.87/calculate', {
               params: this.params
           }).then((res) => {
               console.log("res", res)
