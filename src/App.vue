@@ -90,7 +90,7 @@ export default {
     },
     methods: {
       getData() {
-          axios.get('http://185.116.194.87/calculated_data').then((res) => {
+          axios.get('http:/185.116.194.87/calculated_data').then((res) => {
               console.log("res", res)
               this.data = res.data[0].data;
               let arrRoK = []
